@@ -5,7 +5,7 @@ const btnRight = document.getElementById("right");
 let monitor = document.getElementById('mon');
 const folder = "img/";
 const arrTrans = ["logan", "samosval", "t34", "t90", "uaz"];
-let curTrans = 0;
+let curTrans = 3;
 
 function runLeft(){
     console.log("Поехали влево");

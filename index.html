@@ -7,32 +7,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Конверт валют</h1>
+    <h1>фотоалюбом</h1>
     <div class="container">
-
-      <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Сумма</label>
-          <input type="email" class="form-control" id="many" aria-describedby="emailHelp">
-          
+      <div class="row">
+        <div class="col-4">
+          <button id="btn" type="button" class="btn btn-secondary btn-lg">Закачать</button>
         </div>
-        <select id="chekMany" class="form-select" aria-label="Default select example">
-          <option selected>Выбрать валюту</option>
-          <option value="1">Доллар</option>
-          <option value="2">Евро</option>
-          <option value="3">Юань</option>
-          <option value="4">Zeny</option>
-        </select>
+        <div class="col-8">
+          <div class="mb-3">
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon3">Введите количество загрузок</span>
+              <input id="fotoNumber" type="text" class="form-control" aria-describedby="basic-addon3 basic-addon4">
+            </div>
+          </div>
+          </div>
+      </div>
 
-        <div id="out" class="alert alert-primary" role="alert">
-          A simple primary alert—check it out!
+      <div id="canv" class="row">
+        <template id="fnode">
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img id="ft" src="https://api.slingacademy.com/public/sample-photos/8.jpeg" class="card-img-top" alt="...">
+          </div>
         </div>
+      </template>
+      </div>
+  </div>
 
-        <button type="button" onclick="converter()" class="btn btn-primary">Primary</button>
-
-      </form>
-
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>

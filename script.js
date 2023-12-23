@@ -29,7 +29,6 @@ function loadFoto(rangeFoto){
 
 }
 
-
 // function createElement(l){
 //   for(let i = 0; i < l.lenght; i++){
 //   let foto = temp.content.cloneNode(true);
@@ -38,3 +37,9 @@ function loadFoto(rangeFoto){
 //    canv.appendChild(foto);
 //   }
 // }
+// function setNumber(){
+//   let limit = document.getElementById('fotoNumber').value;
+//   console.log(limit)
+//   if(isNa)
+// }
+
